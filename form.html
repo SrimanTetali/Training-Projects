@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #f93bbc, blue);
+            font-family: Arial;
+            color: white;
+        }
+
+        form {
+            background-color: black;
+            margin: 50px auto;
+            padding: 30px;
+            border-radius: 20px;
+            width: 400px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            width: 48%;
+            background-color: #f41816;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            margin-right: 2%;
+        }
+        
+        .ending::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <form action="" method="post">
+        <h2 align="center"><u>Registration Form</u></h2>
+
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required>
+
+        <label for="phno">PhoneNumber:</label>
+        <input type="tel" name="phno" id="phno" required>
+
+        <label for="gender">Gender:</label>
+        <select>
+            <option value="male">Male</option>
+            <option value="Female">Female</option>
+            <option value="others">Others</option>
+        </select>
+
+        <label for="lang">Language:</label>
+        <input type="text" name="lang" id="lang" required>
+
+        <label for="zipcode">Zip code:</label>
+        <input type="text" name="zipcode" id="zipcode" required>
+
+        <label for="about">About:</label>
+        <textarea id="about" rows="5" cols="30"></textarea>
+
+        <div class="ending">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </div>
+    </form>
+</body>
+</html>
