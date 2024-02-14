@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Mapping</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+            text-align: center;
+        }
+        h2 {
+            margin-top: 50px;
+            color: #333;
+        }
+        #image-container {
+            margin-top: 50px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <h2>Click on the HTML, CSS, JS Images to learn about them</h2>
+    <div id="image-container">
+        <img src="HCJ.png" usemap="#image_map" alt="HTML, CSS, JS">
+        <map name="image_map">
+            <area alt="HTML Tutorial" title="HTML Tutorial" href="https://www.tutorialspoint.com/html/index.htm" coords="6,62,92,334" shape="rect" target="_blank">
+            <area alt="JS Tutorial" title="JS Tutorial" href="https://www.tutorialspoint.com/javascript/index.htm" coords="108,26,191,128" shape="rect" target="_blank">
+            <area alt="CSS Tutorial" title="CSS Tutorial" href="https://www.tutorialspoint.com/css/index.htm" coords="206,60,292,156" shape="rect" target="_blank">
+        </map>
+    </div>
+</body>
+</html>
