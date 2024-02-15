@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Mapping</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: #f0f0f0; 
+            color: #333;
+        }
+        h2 {
+            font-family: Arial, sans-serif;
+            margin-top: 20px;
+            color: #333;
+        }
+        p {
+            font-family: Arial, sans-serif;
+            margin: 20px auto;
+            max-width: 600px; 
+            color: #333;
+        }
+        #image-container {
+            display: inline-block; 
+            margin-top: 20px; 
+        }
+        img {
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <h2>Web Programming Languages</h2>
+    <p>Explore tutorials on various web programming languages by clicking on the corresponding areas of the image below.</p>
+    <div id="image-container">
+        <img src="./imgmap.jpg" usemap="#image_map" alt="Web Programming Languages" style="max-width: 100%;">
+        <map name="image_map">
+            <area alt="HTML Tutorial" title="HTML Tutorial" href="https://www.w3schools.com/html/html_intro.asp" coords="22,100,65,134" shape="rect" target="_blank">
+            <area alt="C++ Tutorial" title="C++ Tutorial" href="https://www.w3schools.com/cpp/cpp_intro.asp" coords="25,50,65,86" shape="rect" target="_blank" >
+            <area alt="C Tutorial" title="C Tutorial" href="https://www.w3schools.com/c/c_intro.php" coords="60,21,101,50" shape="rect" target="_blank">
+            <area alt="SQL Tutorial" title="SQL Tutorial" href="https://www.w3schools.com/sql/sql_intro.asp" coords="110,9,150,38" target="_blank" shape="rect">
+            <area alt="Ruby Tutorial" title="Ruby Tutorial" href="https://www.javatpoint.com/what-is-ruby" coords="163,9,200,39" shape="rect" target="_blank">
+            <area alt="JavaScript Tutorial" title="JavaScript Tutorial" href="https://www.w3schools.com/js/js_intro.asp" coords="216,19,252,48" shape="rect" target="_blank">
+            <area alt="Python Tutorial" title="Python Tutorial" href="https://www.w3schools.com/python/python_intro.asp" coords="247,103,284,133" shape="rect" target="_blank">
+            <area alt="Java Tutorial" title="Java Tutorial" href="https://www.w3schools.com/java/java_intro.asp" coords="247,54,285,85" shape="rect" target="_blank">
+        </map>
+    </div>
+</body>
+</html>
